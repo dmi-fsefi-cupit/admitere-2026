@@ -19,3 +19,25 @@
 .opportunities>span,.partners>span{font-size:9px;color:var(--blue);font-weight:800;letter-spacing:.06em}.opportunities article{display:flex;gap:9px;padding:10px 0;border-bottom:1px solid #edf0f5}.opportunities article:last-child{border-bottom:0}.opportunities article>i{width:27px;height:27px;flex:0 0 auto;display:grid;place-items:center;border-radius:6px;background:#edf3ff;color:var(--blue);font-style:normal}.opportunities article b,.opportunities article small{display:block}.opportunities article b{font-size:10px}.opportunities article small{font-size:8px;line-height:1.45;color:var(--muted);margin-top:3px}.partners h3{font-size:14px;margin:6px 0}.partners p{font-size:9px;line-height:1.5;color:var(--muted)}.partners>div{border:1px dashed #cbd5e1;border-radius:5px;padding:8px;margin-top:5px;color:#98a2b3;font-size:8px;text-align:center}.partners>a{display:block;color:var(--blue);font-size:9px;font-weight:700;margin-top:10px}
 /* Grid alignment and presentation marks */
 .shell>main>header{grid-row:1}.withRail{grid-row:2}.rightRail{grid-row:2}.partnerLogo{display:flex!important;align-items:center;gap:10px;padding:8px!important}.partnerLogo>i{width:31px;height:31px;flex:0 0 auto;display:grid;place-items:center;border-radius:7px;background:var(--navy);color:#fff;font-style:normal;font-size:9px;font-weight:800;letter-spacing:.04em}.partnerLogo>b{font-size:9px;color:#344258}
+
+/* Pe mobil: sesiunea apare înaintea coloanei auxiliare */
+@media (max-width: 720px) {
+  .shell > main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shell > main > header {
+    order: 0;
+  }
+
+  .withRail {
+    order: 1;
+    padding-top: 8px;
+  }
+
+  .rightRail {
+    order: 2;
+    margin: 12px;
+  }
+}
